@@ -7,7 +7,8 @@ singular_plot <- function(singulars){
 				labs(title=paste("Scree plot of the ", length(singulars), " Singular values of W matrix",sep="")) +
 				xlab("Singular value index") +
 				ylab("Values") +
-				theme_minimal()
+				theme_minimal() + 
+				theme_bw()
 	plot(p)
 }
 
