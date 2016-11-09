@@ -24,10 +24,10 @@ simuLatYXG <- function(Gmode=c("continuous","discrete"),betay_xg=3,betay_gx=3,be
    	Z <- mvrnorm(1,E,sigma)
    	Z <- data.frame(y=Z[1],x=Z[2],g=Z[3])
    	names(E) <- c("Y","X","G")
-   	cat("Expection: \n", paste(c("Y","X","G"),E,collapse=", ",sep = ": "),"\n\n")
-   	cat("Latent value generated:\n")
-   	print(round(unlist(Z),3))
-   	cat("\n")
+#   	cat("Expection: \n", paste(c("Y","X","G"),E,collapse=", ",sep = ": "),"\n\n")
+#   	cat("Latent value generated:\n")
+#   	print(round(unlist(Z),3))
+#   	cat("\n")
    	return(list(Z=Z,Sigma=sigma,Expecation = E))
 	}
 
