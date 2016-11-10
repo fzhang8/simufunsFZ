@@ -8,7 +8,9 @@ singular_plot <- function(singulars){
 				xlab("Singular value index") +
 				ylab("Values") +
 				theme_minimal() + 
-				theme_bw()
+				theme_bw() + 
+				theme(plot.title = element_text(size = 30),axis.text=element_text(size=20),
+								axis.title=element_text(size=30))
 	plot(p)
 }
 
